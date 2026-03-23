@@ -5,7 +5,7 @@ Description: JurisAI - SaaS de gestão de processos judiciais
 Globals:
   Function:
     Runtime: dotnet8
-    Architectures: [arm64]
+    Architectures: [x86_64]
     MemorySize: 512
     Timeout: 30
     Environment:
@@ -13,7 +13,7 @@ Globals:
         DYNAMODB_TABLE: !Ref JurisAITable
         S3_BUCKET_NAME: !Ref DocumentosBucket
         COGNITO_USER_POOL_ID: !Ref UserPool
-        ANTHROPIC_API_KEY: !Sub '{{resolve:secretsmanager:jurisai/anthropic:SecretString:api_key}}'
+        ANTHROPIC_API_KEY: '{{resolve:ssm:jurisai.anthropic_api_key}}'
   Api:
     Cors:
       AllowMethods: "'GET,POST,PUT,DELETE,OPTIONS'"
@@ -34,7 +34,10 @@ Resources:
     Type: AWS::DynamoDB::Table
     Properties:
       TableName: !Sub 'jurisai-${Environment}'
-      BillingMode: PAY_PER_REQUEST
+      BillingMode: PROVISIONED
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
       AttributeDefinitions:
         - AttributeName: PK
           AttributeType: S
@@ -58,11 +61,12 @@ Resources:
               KeyType: RANGE
           Projection:
             ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: 5
+            WriteCapacityUnits: 5
       TimeToLiveSpecification:
         AttributeName: deletedAt
         Enabled: true
-      PointInTimeRecoverySpecification:
-        PointInTimeRecoveryEnabled: true
       SSESpecification:
         SSEEnabled: true
 
@@ -295,8 +299,8 @@ Resources:
             BucketName: !Ref DocumentosBucket
         - Statement:
             - Effect: Allow
-              Action: secretsmanager:GetSecretValue
-              Resource: !Sub 'arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:jurisai/*'
+              Action: ssm:GetParameter
+              Resource: !Sub 'arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/jurisai*'
       Events:
         GerarPeca:
           Type: HttpApi
