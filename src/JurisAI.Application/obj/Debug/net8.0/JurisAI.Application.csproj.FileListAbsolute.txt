@@ -1,0 +1,15 @@
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/bin/Debug/net8.0/JurisAI.Application.deps.json
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/bin/Debug/net8.0/JurisAI.Application.dll
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/bin/Debug/net8.0/JurisAI.Application.pdb
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/bin/Debug/net8.0/JurisAI.Domain.dll
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/bin/Debug/net8.0/JurisAI.Domain.pdb
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/obj/Debug/net8.0/JurisAI.Application.csproj.AssemblyReference.cache
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/obj/Debug/net8.0/JurisAI.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/obj/Debug/net8.0/JurisAI.Application.AssemblyInfoInputs.cache
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/obj/Debug/net8.0/JurisAI.Application.AssemblyInfo.cs
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/obj/Debug/net8.0/JurisAI.Application.csproj.CoreCompileInputs.cache
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/obj/Debug/net8.0/JurisAI..A6466F03.Up2Date
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/obj/Debug/net8.0/JurisAI.Application.dll
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/obj/Debug/net8.0/refint/JurisAI.Application.dll
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/obj/Debug/net8.0/JurisAI.Application.pdb
+/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/obj/Debug/net8.0/ref/JurisAI.Application.dll

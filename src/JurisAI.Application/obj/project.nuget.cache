@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ho4hcuAJiS0=",
+  "success": true,
+  "projectFilePath": "/Users/hendriksonpetzold/jurisai/jurisai-backend/src/JurisAI.Application/JurisAI.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/hendriksonpetzold/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
+    "/Users/hendriksonpetzold/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/hendriksonpetzold/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
